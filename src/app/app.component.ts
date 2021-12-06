@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * component prinpal and approot.
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

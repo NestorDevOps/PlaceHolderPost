@@ -1,0 +1,17 @@
+<h1>Edit post</h1>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+    <label for="title">Title</label>
+    <input id="title" type="text" formControlName="title">
+  </div>
+  <div>
+    <label for="body">Body</label>
+    <textarea id="body" name="body" formControlName="body" mdInput ></textarea>
+  </div>
+  <div> 
+    <input id="id" type="hidden" formControlName="id" [(ngModel)]="data.id" value="1">
+    <input id="userId" type="hidden" formControlName="userId" value="1">
+  </div>
+  <button mat-raised-button id="close-button" (click)="closeModal()">cancel</button>
+  <button mat-raised-button id="update-button" type="submit">update</button>
+</form>

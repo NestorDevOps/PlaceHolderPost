@@ -1,0 +1,28 @@
+<div class="container"> 
+    <h1>Post list</h1>
+    <div class="flex">
+        <input type="text" class="forms-control" placeholder="username.." 
+        [(ngModel)]="filtercard"
+        name="filtercard" />
+        <button mat-raised-button id="add-button" (click)="openModalCreatePost()">Add</button>
+    </div>
+</div>
+<div class="container"> 
+    <ul class="list-group list-group-horizontal" *ngFor="let Card of Card | filter:filtercard">
+        <li class="list-group-item" >
+                <div class="card-container flex">
+                    <div class="flex-element">
+                        <img class="alineadoTextoImagenAbajo" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar">
+                        <p>{{Card.user.username}}</p>
+                    </div>
+                    <div class="">
+                        <h3 class="card-title">{{Card.post.title}}</h3>
+                        <p class="card-text">{{Card.post.body}}</p>
+                    </div>
+                </div>
+                <div id="edit-button-holder">
+                    <button mat-raised-button id="edit-button" (click)="openModalEditPost(Card.post.id)">Edit</button>
+                </div>
+        </li>
+    </ul>
+</div>

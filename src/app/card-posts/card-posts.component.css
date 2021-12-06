@@ -1,0 +1,120 @@
+  div {
+    width: 600px;
+  }
+  
+  h3 {
+    font: 250 25px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font: 600 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+  }
+
+  ul {
+    background: #c3daf3;
+    list-style-type: none;
+    margin: 5 px;
+    padding: 20px;
+  }
+   
+  li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+   
+  li:last-child {
+    border: none;
+  }
+   
+  li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 200px;
+   
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+  }
+   
+  li a:hover {
+    font-size: 30px;
+    background: #f6f6f6;
+  }
+
+  img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  img.alineadoTextoImagenArriba{
+    vertical-align: text-top;  
+  }
+  img.alineadoTextoImagenCentro{
+    vertical-align: middle;
+    /* Ojo vertical-align: text-middle no existe*/
+  }
+  img.alineadoTextoImagenAbajo{
+    vertical-align: text-bottom;  
+  }
+
+  .flex { 
+    display: flex; 
+    justify-content:space-between;
+    width: 100%;
+  }
+  
+  .flex-wrap { 
+    display: flex; 
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width: 100%;
+  }
+  
+  .flex-element{
+    flex:1 1 0;
+    margin-right: 40px;
+  }
+  .flex-elemento:nth-child(2){
+    flex-grow:3;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+  #edit-button {
+    color: white;
+    background-color: #4b4b4b;
+    border: 1px solid black;
+  }
+
+  #add-button {
+    color: white;
+    background-color: #686767;
+    border: 1px solid black;
+    margin-left: 10px;
+  }
