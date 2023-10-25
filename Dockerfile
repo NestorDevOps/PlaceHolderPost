@@ -1,5 +1,6 @@
 # Simple file docker with create nginx server 
 # and deploy build angular proyect
+# Nestor Fabian
 FROM node:10-alpine as build-step
 
 RUN mkdir -p /app
